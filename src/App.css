@@ -1,0 +1,23 @@
+body {
+  background-color: #fff;
+}
+.nav-link {
+  color: white;
+}
+/* Slider */
+.carousel-caption {
+  bottom: 50%;
+  max-width: 35%;
+}
+.carousel-indicators li {
+  visibility: hidden;
+}
+
+.card-container {
+  margin-top: -170px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  padding: 20px;
+}
