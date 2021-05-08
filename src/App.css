@@ -17,7 +17,6 @@ body {
   margin-top: -170px;
 }
 
-.card {
-  background-color: #1f1f1f;
-  padding: 20px;
+.footer-container {
+  background-image: url("https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.aon3d.com/wp-content/themes/aon3d/html_templates/build//assets/img/curved-bg.png");
 }
