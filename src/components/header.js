@@ -1,27 +1,33 @@
-import { Navbar, NavDropdown } from "react-bootstrap";
+import Dropdown from "react-bootstrap/Dropdown";
+
 export default function Header() {
   return (
-    <div
-      className="pl-5 pr-5 w-100 fixed-top"
+    <nav
+      className="navbar fixed-top"
       style={{ background: "rgba(0, 0, 0, 0.6)" }}
     >
-      <Navbar className="row" collapseOnSelect expand="lg" variant="dark">
-        <div className="col-md-4">
-          <img className="header-logo mr-5" src="/logo.svg" alt="logo"></img>
-          <Navbar.Brand href="#home">
-            <span className="h6">Home</span>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <div className="container-fluid">
+        <div className="row w-100">
+          <div className="text-white d-flex align-items-center ms-2">
+            <div className="flex-grow-1">
+              <img src="/logo.svg" alt="logo"></img>
+              <span className="ms-5">Home</span>
+            </div>
+            <Dropdown>
+              <Dropdown.Toggle
+                className="bg-transparent border-0"
+                id="dropdown-basic"
+              >
+                Account
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#">Profile</Dropdown.Item>
+                <Dropdown.Item href="#">Logout</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
         </div>
-        <NavDropdown
-          className="col-md-4 offset-md-6"
-          title="Account"
-          id="collasible-nav-dropdown"
-        >
-          <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Logout</NavDropdown.Item>
-        </NavDropdown>
-      </Navbar>
-    </div>
+      </div>
+    </nav>
   );
 }

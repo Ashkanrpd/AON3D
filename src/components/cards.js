@@ -38,15 +38,16 @@ export default function Cards() {
           <div className="col-12">
             <div className="row">
               {sections.map((section, i) => (
-                <div key={i} className="col-lg-4 text-white mb-5 p-5">
+                <div
+                  key={i}
+                  className="col-lg-4 text-white mb-5 p-5 position-relative"
+                >
                   <div className="bg-dark h-100 p-5 d-flex justify-content-between flex-column">
                     <h4 className="text-center mb-5">{section.title}</h4>
                     <div className="text-center flex-grow-1 mb-5">
                       {section.description}
                     </div>
-                    <a href="#" class="btn btn-primary ">
-                      Go somewhere
-                    </a>
+                    <button className="btn btn-primary ">Go somewhere</button>
                   </div>
                 </div>
               ))}

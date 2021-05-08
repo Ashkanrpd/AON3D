@@ -1,15 +1,12 @@
 body {
   background-color: #fff;
 }
-.nav-link {
-  color: white;
-}
+
 /* Slider */
 .carousel-caption {
-  bottom: 50%;
-  max-width: 35%;
+  top: 30%;
 }
-.carousel-indicators li {
+.sr-only {
   visibility: hidden;
 }
 

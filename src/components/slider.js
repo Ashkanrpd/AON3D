@@ -29,7 +29,7 @@ export default function Slider() {
       {data.map((slide, i) => (
         <Carousel.Item key={i}>
           <img
-            className="d-block w-100 slide vh-100"
+            className="d-block w-100 vh-100"
             src={slide.src}
             alt={slide.alt}
           />

@@ -1,3 +1,4 @@
+import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "./components/header.js";
 import Slider from "./components/slider.js";

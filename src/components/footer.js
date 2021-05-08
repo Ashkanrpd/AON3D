@@ -36,26 +36,24 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bottom-wrapper"></div>
+      <div className="bottom-wrapper border-top"></div>
       <div className="container-fluid">
         <div className="row">
-          <div className="d-flex w-100 justify-content-between text-white text-mute">
+          <div className="d-flex w-100 justify-content-between text-white text-light flex-wrap">
             <div>
               <span>
-                <small className="text-muted">
-                  © 2020 AON3D. All rights reserved.
-                </small>
+                <small>© 2020 AON3D. All rights reserved.</small>
               </span>
             </div>
             <div>
               <span>
-                <small className="text-muted ml-3 mr-2">Privacy</small>
+                <small className="ml-3 mr-2">Privacy</small>
               </span>
               <span>
-                <small className="text-muted ml-3 mr-2">Terms of Use</small>
+                <small className="ml-3 mr-2">Terms of Use</small>
               </span>
               <span>
-                <small className="text-muted ml-3 mr-2">Terms of Sale</small>
+                <small className="ml-3 mr-2">Terms of Sale</small>
               </span>
             </div>
           </div>
