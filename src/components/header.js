@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 
 export default function Header() {
@@ -11,7 +12,9 @@ export default function Header() {
           <div className="text-white d-flex align-items-center ms-2">
             <div className="flex-grow-1">
               <img src="/logo.svg" alt="logo"></img>
-              <span className="ms-5">Home</span>
+              <Link className="text-white text-decoration-none ms-5" to="/home">
+                Home
+              </Link>
             </div>
             <Dropdown>
               <Dropdown.Toggle
@@ -22,6 +25,7 @@ export default function Header() {
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href="#">Profile</Dropdown.Item>
+                <Dropdown.Item href="/gallery">Gallery</Dropdown.Item>
                 <Dropdown.Item href="#">Logout</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
